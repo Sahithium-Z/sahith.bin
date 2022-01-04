@@ -1,0 +1,7 @@
+#!/bin/sh
+while true
+do
+	var=`xprintidle`
+	[ $var -lt 300000 ] && xdotool getactivewindow | xargs xwininfo -id | grep 'Window id' | cut -d '"' -f2 >> ~/.local/share/timetrack/$(date '+%y%m%d')
+sleep 10
+done

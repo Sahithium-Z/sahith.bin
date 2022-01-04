@@ -1,0 +1,2 @@
+#!/bin/sh
+maim -s ~/Pictures/Da\ Hub/July/24/"$(date '+%y%m%d-%H%M-%S').png"

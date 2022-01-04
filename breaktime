@@ -1,0 +1,9 @@
+#!/bin/sh
+while true; do
+	[ $(xprintidle) -lt 50000 ] && echo "minute" >> ~/.local/share/time
+	if [ $(wc -l ~/.local/share/time | cut -d ' ' -f1) -gt 29 ]; then
+		notify-send 'BREAK TIME\n REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'
+		echo -n "" > ~/.local/share/time
+	fi
+	sleep 1m
+done

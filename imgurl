@@ -1,0 +1,4 @@
+#!/bin/sh
+curl $1 -o hello.png
+sxiv hello.png && rm hello.png
+sxiv hello.png || rm hello.png && $BROWSER $1

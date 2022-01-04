@@ -1,0 +1,2 @@
+#!/bin/sh
+wine '/home/sahith/.local/share/wineprefixes/default/drive_c/users/sahith/Desktop/Games/Hades.v1.37133/Hades.v1.37133/Hades/x64/Hades.exe'

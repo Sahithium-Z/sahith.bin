@@ -1,0 +1,3 @@
+#!/bin/sh
+var= $(cat /home/sahith/.config/games | dmenu -p "Choose a game")
+echo $var

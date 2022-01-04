@@ -1,0 +1,7 @@
+#!/bin/sh
+var=0
+while [ $var -lt 2 ]; do
+	slock
+	var=$(expr $var + 1)
+done
+killall slock

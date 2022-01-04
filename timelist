@@ -1,0 +1,2 @@
+#!/bin/sh
+sort ~/.local/share/timetrack/$(date "+%y%m%d") | uniq -c | sort -nr | less

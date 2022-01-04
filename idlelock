@@ -1,0 +1,7 @@
+#!/bin/sh
+echo 0 > ~/.local/share/idlelock
+while [ $(cat ~/.local/share/idlelock) -lt 10000 ]; do
+	[ $(xprintidle) -gt $(cat ~/.local/share/idlelock) ] && xprintidle > ~/.local/share/idlelock
+	slock
+done
+killall slock

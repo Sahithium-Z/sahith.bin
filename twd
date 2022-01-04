@@ -1,0 +1,9 @@
+#!/bin/sh
+interactive() {
+	read -p 'Mode: ' mode
+	read -p 'ID: ' id
+	read -p 'Output: ' output
+	TwitchDownloaderCLI -m $mode --id $id -o $output
+}
+[ -z $1 ] && interactive
+[ -z $1 ] || TwitchDownloaderCLI -m $1 --id $2 -o $3
