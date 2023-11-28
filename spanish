@@ -1,0 +1,5 @@
+#!/bin/sh
+word=$(echo "" | dmenu)
+echo $word >> ~/.local/share/spanishstuff
+meaning=$(echo "" | dmenu)
+echo $meaning >> ~/.local/share/spanishstuff
